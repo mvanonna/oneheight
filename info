@@ -1,0 +1,16 @@
+// Differences between jQuery methods heigt(), innerHeight(), outerHeight(), and outerHeight(true) 
+// 
+// height() returns just the height of the element, no borders, no margins and no padding
+// innerHeight() returns the element's height including the padding
+// outerHeight() returns the element's height, including the padding and borders
+// outerHeight(true) returns the element's height, including the padding, borders and margins
+// 
+// 
+//+-------------------+---------+--------+--------+------------------------------------+
+//| method            | padding | border | margin | jQuery Documentation               |
+//+-------------------+---------+--------+--------+------------------------------------+
+//| height            |    -    |    -   |    -   | http://api.jquery.com/height/      |
+//| innerHeight       |    X    |    -   |    -   | http://api.jquery.com/innerHeight/ |
+//| outerHeight       |    X    |    X   |    -   | http://api.jquery.com/outerHeight/ |
+//| outerHeight(true) |    X    |    X   |    X   | http://api.jquery.com/outerHeight/ |
+//+-------------------+---------+--------+--------+------------------------------------+
